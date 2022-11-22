@@ -28,7 +28,8 @@ $weather = $api->getWeather($chosenLocation);
     <title>Weather</title>
 </head>
 <body>
-<h1><?= "🌦Find out the weather in any location." ?></h1>
+<h1><?= "Find out the weather in any location." ?></h1>
+    <h2>The weather in Riga currently is <?php $weatherInRiga->getTemperature()?>°C(feels like <?php $weatherInRiga->getFeelsLike() ?>°C)</h2>
 <h2><a href="/">Home</a>
     <a href="/?city=Riga">Riga</a>
     <a href="/?city=Tallinn">Tallinn</a>
